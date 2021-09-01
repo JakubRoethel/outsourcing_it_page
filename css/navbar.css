@@ -1,10 +1,13 @@
 header {
     background-color: white;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid hsla(0,0%,100%,.5);
 }
 
 .navbar{
-    height: 150px;
-    width: 80%;
+    height: 50px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -14,16 +17,12 @@ header {
 
 
 .logo {
-    margin-top: 20px;
-    font-size: 30px;
-    margin-bottom: 20px; 
-    color: black;
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+    font-family: main-title-font;
 }
 
-.logo h4 {
-  text-align: center;
-  font-size: var(--paragraph-font-size);
-}
 
 nav ul {
     display: flex;
@@ -44,19 +43,13 @@ nav a:hover {
 }
 
 
-.navbar {
-    width: 100%;
-}
 .top-nav {
-   
-    width: 80%;
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
-    margin: 0 auto;
-    
   }
   .top-nav .menu {
     list-style: none;
@@ -74,14 +67,18 @@ nav a:hover {
     text-align: center;
     padding: 0 10px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: var(--navbar-font-size);
+    font-weight: var(--font-weight);
+    color: white;
     
   }
   .top-nav .menu li a:link, .top-nav .menu li a:visited {
-    color: #0d0d0d;
+    color: white;
   }
   .top-nav .menu li a:focus, .top-nav .menu li a:hover, .top-nav .menu li a:active {
-    color: #20232d;
+    color: white;
+    font-size:18px;
+    font-weight: 700;
   }
   
   .top-nav .menu-icon {
@@ -147,6 +144,19 @@ nav a:hover {
   .top-nav .menu-icon {
     display: none;
   }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 7;
+    opacity: 1;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.sticky-nav {
+  color: black !important;
+}
 
 
 @media only screen and (max-width: 860px) {

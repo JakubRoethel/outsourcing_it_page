@@ -6,17 +6,19 @@ body {
 }
 
 p {
-    font-family: var(--main-text-font);
+    font-family: var(--paragraph-font);
     font-size: var(--paragraph-font-size);
     color: var(--text-color);
     line-height: var(--text-line-height);
-    font-weight: 200;
+    font-weight: 400;
+    margin-top: 50px;
 }
 
 h1 {
-    font-family: var(--main-text-font);
+    font-family: main-title-font;
     font-size: var(--title-font-size);
-    color: var(--title-color);
+    color: var(--subtitle-color);
+    text-align: center;
 }
 
 a {
