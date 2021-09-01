@@ -1,56 +1,64 @@
+.section-services {
+  height: 70vh;
+  position: relative;
+}
+
+.section-services::before {
+  content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url("https://treehouse.co/uploads/biuro-domowe-home-office.jpg");
+    background-size: cover;
+    filter: brightness(50%);
+  }
+
 .container-services {
+  position: relative;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: cente;
 }
-
-.section-cooperation {
-  min-height: calc(50vh - 150px);
+.service-title {
+  color: white;
 }
 
 .btn-container {
   display: flex;
+  flex-direction: column;
+}
+.btn-box {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .btn {
-  color: black;
-  padding: 5px 10px;
-  border: 1px solid black;
-  border-radius: 50%;
+  color:black;
   display: flex;
-  height: 60px;
-  width: 60px;
+  flex-direction: column;
+  height: 200;
+  width: 260px;
   justify-content: center;
   align-items: center;
-  padding: 15px;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 50px;
+  font-size: 20px;
   font-weight: 700;
-  position: relative;
-  z-index: -2;
+  font-family: var(--paragraph-font);
+  padding: 20px 20px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
 }
 
-.gbr {
-  background: url("https://2.allegroimg.com/original/014c5b/5f4a93e74d35a5432b8d03c4e712/OFICJALNA-FLAGA-WIELKIEJ-BRYTANII-UK-ANGIELSKA-Temat-USA");
-  background-position: center;
-  background-size: cover;
-  color: white;
+.services-ico {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
-.btn-flag::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 50%;
-  z-index: -1;
-  box-sizing: unset !important;
-}
 
 @media only screen and (max-width: 860px) {
   .btn-container {
@@ -59,14 +67,4 @@
     padding: 0 20px 50px 20px;
   }
 
-  .btn-flag {
-    height: 80px;
-    width: 80px;
-    margin: 0 10px 20px 10px;
-
-  }
-
-  .decoration-bar {
-    background-position: center;
-  }
 }
