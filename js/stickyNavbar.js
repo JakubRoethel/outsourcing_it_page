@@ -3,6 +3,8 @@ window.onscroll = function() {stickyNavbar()};
 const navbar = document.getElementById("navbar");
 const logo = document.getElementsByClassName("logo");
 const menuList = document.getElementsByClassName("scroll");
+const burgerMenu = document.getElementsByClassName("navicon");
+console.log(burgerMenu);
 console.log(menuList)
 console.log(logo)
 
@@ -21,6 +23,7 @@ function stickyNavbar() {
     menuList[2].classList.add("sticky-nav");
     menuList[3].classList.add("sticky-nav");
     menuList[4].classList.add("sticky-nav");
+    burgerMenu[0].classList.add("sticky-nav");
   } else {
     navbar.classList.remove("sticky");
     logo[0].classList.remove("sticky-nav");
@@ -29,5 +32,6 @@ function stickyNavbar() {
     menuList[2].classList.remove("sticky-nav");
     menuList[3].classList.remove("sticky-nav");
     menuList[4].classList.remove("sticky-nav");
+    burgerMenu[0].classList.remove("sticky-nav");
   }
 }
