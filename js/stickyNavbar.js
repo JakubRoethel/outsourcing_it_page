@@ -60,6 +60,12 @@ menuBtn[0].addEventListener("click", () => {
       menuList[2].classList.remove("sticky-nav");
       menuList[3].classList.remove("sticky-nav");
       menuList[4].classList.remove("sticky-nav");
+
+      // menuList[0].style.display='none';
+      // menuList[1].style.display='none';
+      // menuList[2].style.display='none';
+      // menuList[3].style.display='none';
+      // menuList[4].style.display='none';
       // burgerMenu[0].classList.remove("sticky-nav");
     }
   }
