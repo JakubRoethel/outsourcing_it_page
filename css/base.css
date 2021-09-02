@@ -27,7 +27,7 @@ a {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
     .section {
         padding: 30px 20px 50px 20px;
     }
@@ -43,4 +43,12 @@ a {
         font-size: var(--title-font-size-mobile);
         color: var(--title-color);
     }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1400px) {
+    .section {
+        padding: 0px 90px;
+    }
+
+
 }

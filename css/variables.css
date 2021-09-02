@@ -3,6 +3,7 @@
 
 :root {
     --paragraph-font: 'text-font';
+    --title-font: 'main-title-font';
     --paragraph-font-size: 18px;
     --navbar-font-size: 14px;
     --main-title-font-size: 70px;
