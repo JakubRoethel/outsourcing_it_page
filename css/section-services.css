@@ -60,7 +60,7 @@
 }
 
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 750px) {
   .section-services {
     height: 100%;
   }
@@ -84,5 +84,29 @@
   .service-title {
     margin-bottom: 20px;
   }
+
+}
+@media only screen and (min-width: 750px) and (max-width: 1400px) {
+  .btn-box{
+    flex-direction: column;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+  .btn {
+    margin: 0px 10px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .section-services {
+    height: unset;
+  }
+
+  .container-services{
+    margin: unset;
+    padding-top: 100px;
+
+  }
+
 
 }

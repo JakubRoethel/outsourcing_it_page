@@ -19,7 +19,6 @@
 .big-post-img{
     background: url("https://image.ceneostatic.pl/data/article_picture/65/e0/f3ed-216c-4e24-9b40-675176ce1d56_large.jpg");
     background-size: cover;
-    width: 470px;
     height: 240px;
 }
 .big-post-box{
@@ -50,8 +49,9 @@
     color: black;
 }
 .big-link{
-    font-family: main-title-font;
+    font-family: var( --title-font);
     font-size: 30px;
+    font-weight: 700;
 }
 .post {
     display: flex;
@@ -69,14 +69,13 @@
 .post-img {
     background:url("https://image.ceneostatic.pl/data/article_picture/65/e0/f3ed-216c-4e24-9b40-675176ce1d56_large.jpg");
     background-size: cover;
-    width: 300px;
     height: 150px;
 }
 .post-content{
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 580px) { 
+@media only screen and (max-width: 750px) { 
 
     .blog {
         padding: 0 40px;
@@ -95,10 +94,10 @@
     }
 
     .post {
-        width: 90%;
         margin: 0 auto;
         margin-bottom: 40px;
         display: flex;
+        padding: unset;
     }
 
     .two-main-post {
@@ -113,6 +112,10 @@
         margin-bottom: 40px;
     
     }
+    .blog-title {
+        color: black;
+        padding-top: 40px;
+    }
 
     .post-title {
         text-align: center;
@@ -120,10 +123,36 @@
         margin-top: 10px;
     }
     .big-post-img, .post-img{
-        width: 250px;
-        height: 130px;
+        width: 100%;
+        height: 150px;
     }
     .post-link{
         text-align: center;
+        font-size: 30px;
+        width: 100%;
+    }
+    .main-post-text{
+        text-align: center;
+    }
+    .post-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-text {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1400px) {
+    .blog-title {
+        padding-top: 50px;
+    }
+    .post {
+        width: 80%;
+
+    }
+    .post-box {
+        column-gap: 10px;
     }
 }
