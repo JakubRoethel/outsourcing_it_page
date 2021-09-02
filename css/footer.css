@@ -1,6 +1,5 @@
 .footer {
-    background-color: #323232;
-    color: white;
+    background-color: black
 }
 
 .footer-container {
@@ -9,10 +8,56 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 70px;
+    height: 200px;
+}
+.logo-box {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.authors {
+    color: white;
+    font-family: text-font;
+    font-size: 12px;
+    font-weight: 200;
+}
+.footer-logo{
+    color: white;
+    font-family: main-title-font;
+    font-size: 40px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-ico-box{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title {
+    font-family: main-title-font;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.contact-info {
+    margin: unset;
+    color: white;
+    font-family: text-font;
+    font-size: 15px;
 }
 
-
+.social-ico {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 7px;
+    margin-right: 10px;
+}
 
 .footer-link {
     padding-right: 2px;
