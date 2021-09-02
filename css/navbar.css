@@ -1,8 +1,9 @@
 header {
     background-color: white;
-    position: relative;
+    position: sticky;
     background-color: transparent;
     border-bottom: 1px solid hsla(0,0%,100%,.5);
+    width: 100%;
 }
 
 .navbar{
@@ -13,6 +14,10 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed;
+    top: 0; */
+    
+   
 }
 
 
@@ -32,7 +37,7 @@ nav ul {
 
 nav a {
     color: black;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 nav a:hover {
@@ -66,6 +71,7 @@ nav a:hover {
     font-size: var(--navbar-font-size);
     font-weight: var(--font-weight);
     color: white;
+    /* transition: 0.5s ease-out; */
     
   }
   .top-nav .menu li a:link, .top-nav .menu li a:visited {
@@ -73,7 +79,6 @@ nav a:hover {
   }
   .top-nav .menu li a:focus, .top-nav .menu li a:hover, .top-nav .menu li a:active {
     color: white;
-    font-size:18px;
     font-weight: 700;
   }
   
@@ -135,6 +140,7 @@ nav a:hover {
     max-height: none;
     flex-direction: row;
     margin-right: 30px;
+    background: transparent;
   }
 
   .top-nav .menu-icon {
@@ -149,13 +155,19 @@ nav a:hover {
     z-index: 7;
     opacity: 1;
     box-shadow: 0 4px 2px -2px gray;
+    transition: 0.5s ease-out;
 }
 .sticky-nav {
   color: black !important;
+ 
 }
 
 
 @media only screen and (max-width: 860px) {
+
+  header {
+    transition: 0.5s ease-out;
+}
 
     a.logo {
       margin: 0 20px 0 0;
@@ -177,39 +189,42 @@ nav a:hover {
         /* margin: 0 auto; */
         width: 100%;
         text-align: center;
+      
 
     }
 
     .top-nav {
-        width: 100%;
+       
         padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        transition: top 0.75s ease-in;
+        /* transition: 1s all; */
         background: transparent;
         top: 67px;
       }
       .top-nav .menu {
         list-style: none;
         overflow: hidden;
+        margin-right: unset;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         max-height: 0;
-        transition: max-height 0.2s ease-out;
+        transition: 0.5s ease-out;
       }
       .top-nav .menu li a {
         display: inline-block;
         min-width: 75px;
         margin: 0.6em 0;
         padding: 0;
-        transition: 1s all;
+        /* transition: 1s all; */
         text-decoration: none;
         font-size: 15px;
-        text-align: left;
+        text-align: center;
       }
       .top-nav .menu li a:link, .top-nav .menu li a:visited {
         color: #0d0d0d;
@@ -240,7 +255,7 @@ nav a:hover {
         display: block;
         height: 100%;
         position: absolute;
-        transition: all 0.2s ease-out;
+        transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
         width: 100%;
       }
       .top-nav .menu-icon .navicon:before {
@@ -254,7 +269,13 @@ nav a:hover {
       }
       .top-nav .menu-btn:checked ~ .menu {
         max-height: 300px;
+        background: white;
+        margin: unset;
       }
+
+
+
+      
      
       .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
         transform: rotate(-45deg);
@@ -279,4 +300,6 @@ nav a:hover {
       .top-nav .menu-btn:checked ~ .top-nav .menu-icon .navicon.sticky-nav {
         background-color: transparent !important;
       }
+
+      
 }
