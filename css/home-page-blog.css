@@ -72,6 +72,9 @@
     width: 300px;
     height: 150px;
 }
+.post-content{
+    margin-top: 20px;
+}
 
 @media only screen and (max-width: 580px) { 
 
@@ -95,6 +98,7 @@
         width: 90%;
         margin: 0 auto;
         margin-bottom: 40px;
+        display: flex;
     }
 
     .two-main-post {
@@ -115,8 +119,11 @@
         margin-bottom: 50px;
         margin-top: 10px;
     }
-    .big-post-img{
-        width: 300px;
-        height: 150px;
+    .big-post-img, .post-img{
+        width: 250px;
+        height: 130px;
+    }
+    .post-link{
+        text-align: center;
     }
 }
