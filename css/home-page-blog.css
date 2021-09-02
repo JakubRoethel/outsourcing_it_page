@@ -1,0 +1,122 @@
+.blog {
+    
+}
+
+.posts-container {
+    margin-top: 50px;
+}
+
+.two-main-post{
+    display: flex;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+
+}
+.big-post-img{
+    background: url("https://image.ceneostatic.pl/data/article_picture/65/e0/f3ed-216c-4e24-9b40-675176ce1d56_large.jpg");
+    background-size: cover;
+    width: 470px;
+    height: 240px;
+}
+.big-post-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post-title {
+    font-family: main-title-font;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.post-text {
+    font-family: text-font;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-post-text{
+    font-family: text-font;
+    font-size: 18px;
+    font-weight: 400;
+}
+.post-link{
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+}
+.big-link{
+    font-family: main-title-font;
+    font-size: 30px;
+}
+.post {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+}
+
+.post-box{
+    columns: 3;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+
+.post-img {
+    background:url("https://image.ceneostatic.pl/data/article_picture/65/e0/f3ed-216c-4e24-9b40-675176ce1d56_large.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 580px) { 
+
+    .blog {
+        padding: 0 40px;
+    }
+
+    .two-main-post article:nth-child(1), .two-main-post article:nth-child(2) {
+        margin: 0 0 40px 0;
+    }
+    
+
+    .post-box {
+        columns: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .post {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .two-main-post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-main-post article {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    
+    }
+
+    .post-title {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .big-post-img{
+        width: 300px;
+        height: 150px;
+    }
+}
