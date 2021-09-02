@@ -1,6 +1,7 @@
 .background-wrapper {
     position: relative;
     min-height: 100vh;
+    
 }
 
 .background-wrapper::before {
@@ -20,7 +21,8 @@
 .welcome-section{
     height: 100vh;
     display: flex;
-    position: relative;
+    position: absolute;
+    top: 50px;
 }
 .welcome-description {
     display: flex;
