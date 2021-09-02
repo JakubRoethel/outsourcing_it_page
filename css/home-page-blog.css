@@ -72,3 +72,51 @@
     width: 300px;
     height: 150px;
 }
+
+@media only screen and (max-width: 580px) { 
+
+    .blog {
+        padding: 0 40px;
+    }
+
+    .two-main-post article:nth-child(1), .two-main-post article:nth-child(2) {
+        margin: 0 0 40px 0;
+    }
+    
+
+    .post-box {
+        columns: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .post {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .two-main-post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-main-post article {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    
+    }
+
+    .post-title {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .big-post-img{
+        width: 300px;
+        height: 150px;
+    }
+}
