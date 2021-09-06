@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "https://raw.githack.com/CristianDavideConte/universalSmoothScroll/master/js/universalsmoothscroll-min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Outsourcing IT</title>
+</head>
+<body onload="init()">
+    <div class="background-wrapper-3">
+            <header id="navbar">
+                <div class="navbar">
+                    <nav class="top-nav" id="top-nav">
+                        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <a class="logo" href="#welcome-section">LOGO</a>
+                        <ul class="menu" id="menu">
+                            <li><a class="scroll" href="#company">Firma</a></li>
+                            <li><a class="scroll" href="#services">Nasza oferta</a></li>
+                            <li>
+                                <a class="scroll" href="#online-help">Pomoc zdalna</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="./blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="single-post-section">
+                <div class="single-post-title">
+                    <h1 class="main-title">Tytuł Twojego posta</h1>
+                </div>
+            </section>
+    </div>
+    <section class="section section-single-post-content">
+        <div class="single-post-content">
+            <h2>Pierwszy rozdział w h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet dignissimos repellat distinctio ut doloremque iure, ipsa dolorem pariatur sunt repellendus, deleniti temporibus totam, quidem quis quibusdam tempore eos hic.
+            Iste, mollitia! Modi voluptatem omnis ratione perferendis deserunt dolores similique labore velit incidunt nemo quaerat necessitatibus dolor alias, architecto asperiores quo natus reprehenderit laboriosam numquam maxime ipsam qui ab ut.
+            Corrupti eaque natus consequuntur? Iusto repudiandae error earum quod in reiciendis, assumenda rem cupiditate, tempora aliquid voluptate velit labore placeat sunt laudantium sapiente minima nemo soluta quis eos, corporis ratione?
+            Eos odit in, sint necessitatibus odio cumque, temporibus repellat iure animi, tenetur adipisci! Voluptatibus velit omnis amet nemo dignissimos ut, hic rem expedita natus, dolor, consectetur odio labore qui repellendus?
+            Libero dolore odit quibusdam vel voluptas quas mollitia eligendi itaque, placeat possimus aliquam consequatur, in repellendus, eos obcaecati illo impedit. Et tempora animi ducimus magni consectetur pariatur, culpa nulla autem.
+            </p>
+            <h3>Drugi rozdział w h3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet dignissimos repellat distinctio ut doloremque iure, ipsa dolorem pariatur sunt repellendus, deleniti temporibus totam, quidem quis quibusdam tempore eos hic.
+                Iste</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-box">
+                <div class="footer-logo">LOGO</div>
+                <div class="authors">Made by Roethel x Szafrański</div>
+            </div>
+            <div class="footer-contact"> 
+                <h3 class="footer-title">Kontakt</h3>
+                <p class="contact-info">ULICA</p>
+                <p class="contact-info">KOD I MIASTO</p>
+                <p class="contact-info">TEL</p>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-title">Sledź nas</h3>
+                <div class="social-ico-box">
+                    <a class="footer-link">
+                        <img class="social-ico" src="css/icons/5282541_fb_social media_facebook_facebook logo_social network_icon.svg"/>
+                    </a>
+                    <a class="footer-link">
+                        <img class="social-ico" src="css/icons/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"/>
+                    </a>
+                    <a class="footer-link">
+                        <img class="social-ico" src="css/icons/5282548_play_player_video_youtube_youtuble logo_icon.svg"/>
+                    </a>
+                </div>
+                <div class="authors-mobile">Made by Roethel x Szafrański</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/stickyNavbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<!-- <script>
+    function init() {
+    /*
+     * Variables preparation
+     */
+    let yourWrapperElement = document.getElementsByClassName("scroll-section")[0];
+    let whateverEaseFunctionYouWant = remaningScrollDistance => { return remaningScrollDistance / 15 + 1 };
+
+    //Added support for navbar menu's smooth scrolling
+    uss.hrefSetup();
+
+    /*
+     * As you asked for, we only apply the custom scrolling for desktop devices
+     * by using the "wheel" event instead of the "scroll" or "touchmove" events.
+     */
+    yourWrapperElement.addEventListener("wheel", event => {
+      /*
+       * We want to overwrite the default scrolling behaviour
+       * of your outer-wrapper component.
+       */
+      event.preventDefault();
+      event.stopPropagation();
+      uss.scrollYBy(event.deltaY, yourWrapperElement, null, false);
+    }, {passive:false});
+
+    /*
+     * We apply a the custom ease function
+     * which will be used whenever our component is scrolled by the API
+     */
+    uss.setYStepLengthCalculator(whateverEaseFunctionYouWant, yourWrapperElement);
+
+    // uss.setStepLengthCalculator(EASE_LINEAR(200), myContainer); //Every scroll-animation on our container will last 2 seconds
+}
+</script> -->
+
+</html> 

@@ -1,0 +1,62 @@
+.background-wrapper-3 {
+    position: relative;
+    min-height: 60vh;
+    
+}
+
+.background-wrapper-3::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    /* background: rgba(0, 0, 0, 0.37); */
+    background: url("https://bi.im-g.pl/im/51/0a/16/z23113041V,Londynskie-City-.jpg");
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+
+.single-post-section{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    height: calc(100% - 50px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.single-post-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.section-single-post-content {
+    margin-bottom: 50px;
+}
+
+.section-single-post-content h2{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.section-single-post-content h3{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section-single-post-content p{
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 860px) {
+    .single-post-title {
+        margin-right: unset;
+    }
+    .main-title {
+        font-size: 40px;
+    }
+}

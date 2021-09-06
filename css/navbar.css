@@ -86,6 +86,8 @@ nav a:hover {
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background: transparent;
   }
   .top-nav .menu-icon .navicon {
     background: #20232d;
@@ -189,6 +191,8 @@ nav a:hover {
         /* margin: 0 auto; */
         width: 100%;
         text-align: center;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        background: transparent;
       
 
     }
