@@ -17,7 +17,7 @@ p {
 h1 {
     font-family: main-title-font;
     font-size: var(--title-font-size);
-    color: pink;
+    color: var(--primary-color);
     text-align: center;
 }
 
